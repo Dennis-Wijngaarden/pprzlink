@@ -644,11 +644,6 @@
       <field name="msg_id_list" type="uint8[]"/>
     </message>
 
-    <message name="MISSION_DELETE_INDEX" id="80" link="forwarded">
-      <field name="ac_id" type="uint8"/>
-      <field name="index" type="uint8"/>
-    </message>
-
     <message name="GENERIC_COM" id="81">
       <field name="lat" type="int32" unit="1e7deg" alt_unit="deg" alt_unit_coef="0.0000001"/>
       <field name="lon" type="int32" unit="1e7deg" alt_unit="deg" alt_unit_coef="0.0000001"/>
@@ -2559,6 +2554,11 @@
       <field name="ac_id" type="uint8">ID of the table's aircraft to be updated</field>
       <field name="msg_type" type="uint8" values="P_AE|P_BE|SIG"/>
       <field name="msg_data" type="uint8[]"/>
+    </message>
+    
+    <message name="MISSION_DELETE_INDEX" id="160" link="forwarded">
+      <field name="ac_id" type="uint8"/>
+      <field name="index" type="uint8"/>
     </message>
 
   </msg_class>
